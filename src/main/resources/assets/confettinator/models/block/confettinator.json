@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "front": "confettinator:block/confettinator_special_side",
+    "side": "confettinator:block/confettinator_side",
+    "bottom": "confettinator:block/confettinator_side",
+    "top": "confettinator:block/confettinator_top"
+  }
+}

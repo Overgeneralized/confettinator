@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "confettinator",
+  "version": "${version}",
+  "name": "Confettinator Mod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/confettinator/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "dev.overgeneralized.confettinator.client.ConfettinatorModDataGenerator"
+    ],
+    "client": [
+      "dev.overgeneralized.confettinator.client.ConfettinatorModClient"
+    ],
+    "main": [
+      "dev.overgeneralized.confettinator.ConfettinatorMod"
+    ]
+  },
+  "mixins": [
+    "confettinator.mixins.json",
+    {
+      "config": "confettinator.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "accessWidener" : "confettinator.accesswidener",
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
