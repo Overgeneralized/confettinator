@@ -146,8 +146,6 @@ public class ConfettinatorBlock extends BlockWithEntity {
             for (ServerPlayerEntity player : world.getPlayers()) {
                 ServerPlayNetworking.send(player, new ExtendedParticlePacket(new Vec3Dist(pos.up().toCenterPos(), new Vec3d(0, 0.2, 0)), new Vec3Dist(new Vec3d(0, 0.8, 0), new Vec3d(0.1, 0.1, 0.1)), 500, false, Confetti.CONFETTI));
             }
-        } else if (item == Items.SPLASH_POTION) {
-
         } else {
             world.syncWorldEvent(1001, pos, 0);
             return;
