@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "P": "minecraft:paper",
+    "R": "minecraft:redstone",
+    "D": "minecraft:dispenser",
+    "G": "minecraft:glowstone_dust"
+  },
+  "pattern": [
+    "PPP",
+    "PDP",
+    "RGR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "confettinator:confettinator"
+  }
+}
